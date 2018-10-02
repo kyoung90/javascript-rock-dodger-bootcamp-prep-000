@@ -137,7 +137,7 @@ function createRock(x) {
  */
 function endGame() {
 
-  var interval = ;
+  var interval = start();
 
   
   for(var i = 0; i < ROCKS.length; i++){
