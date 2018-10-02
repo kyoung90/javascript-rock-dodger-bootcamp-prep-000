@@ -161,13 +161,16 @@ function moveDodger(e) {
    
    if (e.which === 37) {
     moveDodgerLeft();
+    e.stopPropagation();
+    e.preventDefault();
   }
   else if(e.which === 39){
     moveDodgerRight();
+    e.stopPropagation();
+    e.preventDefault();
   }
   
-  e.stopPropagation();
-  e.preventDefault();
+  
 }
 
 function moveDodgerLeft() {
